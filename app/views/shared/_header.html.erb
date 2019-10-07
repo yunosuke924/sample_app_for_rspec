@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-expand-lg navigation navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto main-nav align-items-center">
+        <li class="nav-item dropdown dropdown-slide">
+          <div class="dropdown-menu dropdown-menu-right">
+            <%= link_to 'Task list', tasks_path, class:"dropdown-item" %>
+            <%= link_to 'New task', new_task_path, class:"dropdown-item" %>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown dropdown-slide">
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-divider"></div>
+            <%= link_to 'Mypage', user_path(current_user), class:"dropdown-item" %>
+            <%= link_to 'Logout', logout_path, class:"dropdown-item", method: :delete %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
