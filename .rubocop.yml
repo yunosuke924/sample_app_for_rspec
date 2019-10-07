@@ -8,13 +8,7 @@ AllCops:
     - 'spec/**/*'
     - 'node_modules/**/*'
   DisplayCopNames: true
-Rails:
-  Enabled: true
 
-Rails/Output:
-  Exclude:
-    - 'config/unicorn/**/*'
-    -
 Layout/MultilineBlockLayout:
   Exclude:
     - 'spec/**/*_spec.rb'
@@ -70,11 +64,4 @@ Style/WhileUntilModifier:
   Enabled: false
 
 Bundler/OrderedGems:
-  Enabled: false
-Rails/OutputSafety:
-  Enabled: true
-  Exclude:
-    - 'app/helpers/**/*.rb'
-
-Rails/InverseOf:
   Enabled: false
