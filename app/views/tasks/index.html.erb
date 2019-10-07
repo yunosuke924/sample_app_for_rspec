@@ -19,8 +19,10 @@
         <td><%= task.status %></td>
         <td><%= task.deadline.strftime('%Y/%-m/%-d %-H:%-M') if task.deadline? %></td>
         <td><%= link_to 'Show', task %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user&.my_object?(task) %>
+          <td><%= link_to 'Edit', edit_task_path(task) %></td>
+          <td><%= link_to 'Destroy', task, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<%= link_to 'New Task', new_task_path if logged_in? %>
