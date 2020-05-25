@@ -1,24 +1,7 @@
-# README
+# RSpec編 課題
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RSpecの[GitHubのREADME](https://github.com/rspec/rspec-rails)を見て、環境構築やテストコードの作成を行いましょう。
 
-Things you may want to cover:
+## 注意点
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+この課題はforkしてご自身のリポジトリを作成して作業してください。この課題へのPRのマージは行わないようにご注意ください。
