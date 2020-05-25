@@ -1,6 +1,6 @@
-# RSpec編 課題
+## RSpec編 課題
 
-RSpecの[GitHubのREADME](https://github.com/rspec/rspec-rails)を見て、環境構築やテストコードの作成を行いましょう。
+RSpecの[GitHubのREADME](https://github.com/rspec/rspec-rails)を見て、RUNTEQの課題にそって環境構築やテストコードの作成を行いましょう。
 
 ## 注意点
 
